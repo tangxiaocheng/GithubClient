@@ -16,3 +16,9 @@ This code was originally prepared for my presentation at Google I/O Extended 201
 1. Update the whole project dependency. Update to androidx
 2. Get rid of 'com.google.auto.factory' to fix the build problem.
 3. add kotlin-kapt for supporting scabbard, otherwirs, scabbard won't work.
+![1](di_pic/frogermcs.io.githubclient.AppComponent.png)
+![2](di_pic/frogermcs.io.githubclient.data.UserComponent.png)
+![3](di_pic/frogermcs.io.githubclient.ui.activity.component.RepositoriesListActivityComponent.png)
+![4](di_pic/frogermcs.io.githubclient.ui.activity.component.RepositoryDetailsActivityComponent.png)
+![5](di_pic/frogermcs.io.githubclient.ui.activity.component.SplashActivityComponent.png)
+![6](di_pic/tree_frogermcs.io.githubclient.AppComponent.png)
