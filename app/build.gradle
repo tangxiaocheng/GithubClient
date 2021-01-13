@@ -1,14 +1,21 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.frogermcs.androiddevmetrics'
+//apply plugin: 'kotlin-kapt'
+//apply plugin: "scabbard.gradle"
+//
+//scabbard {
+//    enabled true
+//    outputFormat "png"
+//}
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "frogermcs.io.githubclient"
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -45,7 +52,7 @@ dependencies {
     implementation 'io.reactivex:rxandroid:1.2.1'
     implementation 'io.reactivex:rxjava:1.2.1'
     implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
-    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
     implementation 'com.squareup.okhttp3:okhttp:3.4.1'
