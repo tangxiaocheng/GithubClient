@@ -14,7 +14,7 @@ android {
 
     defaultConfig {
         applicationId "frogermcs.io.githubclient"
-        minSdkVersion 15
+        minSdkVersion 22
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
