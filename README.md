@@ -12,7 +12,7 @@ This code was created as an example for Dependency Injection with Dagger 2 serie
  
 This code was originally prepared for my presentation at Google I/O Extended 2015 in Tech Space Cracow. http://www.meetup.com/GDG-Krakow/events/221822600/
 
-# Update
+# Update to AndrodX and Add DI Graph
 1. Update the whole project dependency. Update to androidx
 2. Get rid of 'com.google.auto.factory' to fix the build problem.
 3. add kotlin-kapt for supporting scabbard, otherwirs, scabbard won't work.
