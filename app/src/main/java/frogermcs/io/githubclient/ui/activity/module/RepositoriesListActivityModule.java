@@ -1,6 +1,6 @@
 package frogermcs.io.githubclient.ui.activity.module;
 
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import java.util.Map;
 
