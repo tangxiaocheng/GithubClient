@@ -43,8 +43,8 @@ dependencies {
     implementation 'com.google.dagger:dagger-producers:2.30.1'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.30.1'
     provided 'org.glassfish:javax.annotation:10.0-b28'
-    implementation 'com.google.auto.factory:auto-factory:1.0-beta3'
-    annotationProcessor 'com.google.auto.factory:auto-factory:1.0-beta3'
+//    implementation 'com.google.auto.factory:auto-factory:1.0-beta5'
+//    annotationProcessor 'com.google.auto.factory:auto-factory:1.0-beta5'
 
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
@@ -74,6 +74,6 @@ dependencies {
     androidTestImplementation "org.mockito:mockito-core:1.10.19"
     androidTestImplementation "com.google.dexmaker:dexmaker:1.2"
     androidTestImplementation "com.google.dexmaker:dexmaker-mockito:1.2"
-    testAnnotationProcessor "com.google.auto.factory:auto-factory:1.0-beta3"
-    testImplementation "com.google.auto.factory:auto-factory:1.0-beta3"
+//    testAnnotationProcessor "com.google.auto.factory:auto-factory:1.0-beta3"
+//    testImplementation "com.google.auto.factory:auto-factory:1.0-beta3"
 }

@@ -4,7 +4,6 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.google.auto.factory.AutoFactory;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
