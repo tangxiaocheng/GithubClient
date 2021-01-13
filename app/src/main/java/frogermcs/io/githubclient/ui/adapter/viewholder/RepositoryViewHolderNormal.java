@@ -14,7 +14,6 @@ import frogermcs.io.githubclient.data.model.Repository;
 /**
  * Created by Miroslaw Stanek on 11.06.2016.
  */
-@AutoFactory(implementing = RepositoriesListViewHolderFactory.class)
 public class RepositoryViewHolderNormal extends RepositoryViewHolder {
 
     @BindView(R.id.tvName)

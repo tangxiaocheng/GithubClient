@@ -7,11 +7,9 @@ import android.view.ViewGroup;
 import frogermcs.io.githubclient.ui.adapter.viewholder.RepositoryViewHolderNormal;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import frogermcs.io.githubclient.data.model.Repository;
 import frogermcs.io.githubclient.ui.activity.RepositoriesListActivity;
-import frogermcs.io.githubclient.ui.adapter.viewholder.RepositoriesListViewHolderFactory;
 import frogermcs.io.githubclient.ui.adapter.viewholder.RepositoryViewHolder;
 
 /**
@@ -20,14 +18,11 @@ import frogermcs.io.githubclient.ui.adapter.viewholder.RepositoryViewHolder;
 public class RepositoriesListAdapter extends RecyclerView.Adapter {
 
     private RepositoriesListActivity repositoriesListActivity;
-    private Map<Integer, RepositoriesListViewHolderFactory> viewHolderFactories;
 
     private final List<Repository> repositories = new ArrayList<>();
 
-    public RepositoriesListAdapter(RepositoriesListActivity repositoriesListActivity,
-                                   Map<Integer, RepositoriesListViewHolderFactory> viewHolderFactories) {
+    public RepositoriesListAdapter(RepositoriesListActivity repositoriesListActivity) {
         this.repositoriesListActivity = repositoriesListActivity;
-        this.viewHolderFactories = viewHolderFactories;
     }
 
     @Override
@@ -60,12 +55,6 @@ public class RepositoriesListAdapter extends RecyclerView.Adapter {
     @Override
     public int getItemViewType(int position) {
         Repository repository = repositories.get(position);
-        if (repository.stargazers_count > 500) {
-            if (repository.forks_count > 100) {
-                return Repository.TYPE_FEATURED;
-            }
-            return Repository.TYPE_BIG;
-        }
         return Repository.TYPE_NORMAL;
     }
 
